@@ -3,24 +3,27 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Runs should be at the beginning of the script.
+Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-up.ahk"
+Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-down.ahk"
+
 ; Remove window menu popup when alt released
 ~LAlt Up:: return
 
-; Apply when detect window with title begins with Adobe
-; Uncomment (delete ;) only for one option
-; Option 1: apply remap even if window is not focused
-;#IfWinExist Adobe
-; Option 2: apply remap only if window is focused
-#IfWinActive Adobe
+; For some reason, script do not works if I place
+; both ctrl+wheelup and ctrl+wheeldown keystrokes
+; in one file. So, I made two separated files,
+; which are called from this one.
+; If you can help me solve this, please send your
+; pull request to this repository.
 
-; when ctrl+wheel detected, send alt+wheel
-^WheelUp::!WheelUp
-^WheelDown::!WheelDown
 
-; when alt+wheel detected, send ctrl+wheel
-; it do not works though (bacause Adobe handles alt key?)
-!WheelUp::^WheelUp
-!WheelDown::^WheelDown
-
+; Somebody may want to do symmetric remap to be able to scroll
+; tracks up and down (as usually available with ctrl+wheel).
+; So when alt+wheel detected, we need to send ctrl+wheel.
+; Here are simple instructions to do that:
+;;  !WheelUp::^WheelUp
+;;  !WheelDown::^WheelDown
+; But it do not works though (bacause Adobe handles alt key?)
 ; See todo in readme. You can help.
 
