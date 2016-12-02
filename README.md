@@ -31,7 +31,17 @@ It may be not such easy as it seems. Anyway, I have no idea how to do it.
 - Double click on ctrl_to_zoom.ahk file. An icon will appear in system tray.
 - Enjoy comfortable behavior.
   * Script also works for unattached panels from main window.
-  * In Windows 10 (don't know about previous), you can scale without even focusing window.
+  * In Windows 10 you can scale without even focusing Adobe window. Just be sure you have enabled "Scroll inactive windows when I hover over them" option under Settings > Devices > Mouse & Trackpad.
+  * In Windows 7 and 8 you can also scale without focusing Adobe window. But you need to install [Taekwindow](http://taekwindow.net/download.html) application.
+
+## Additional tips ##
+
+### How can I enter expression for some property in Ae? ###
+  It is another problem with alt button. In Windows you can press alt + mouse click on some property (for example, on position) and enter expression for it. But what if you are using Adobe software in virtual machine from Linux host? You are not able to do that, because alt + mouse is handled by window manager.
+  However, you are still able to enter expression. Just select needed propetry, then use main window menu Animation > Add expression or press alt + shift + =.
+
+### How can I change key combinations in Ae? ###
+  There is no GUI for this. But you can change some combinations. This is official Adobe [sulution](https://helpx.adobe.com/after-effects/using/modify-keyboard-shortcuts.html): in main window menu choose Edit > Preferences > General then click Reveal Preferences in Explorer. You will see "Adobe After Effects 14.0 Win ru_RU Комбинации клавиш.txt" or similar file. Edit and save this file. Restart Ae.
 
 ## Licence ##
 GNU General Public License v3
@@ -41,3 +51,4 @@ GNU General Public License v3
 - Fix symmetric remap for scrolling tracks up and down
 - Add beautiful icon to tray
 - Improve Open Source video editors, to be independent from adobe and windows.
+- Script for Ae to autoload alt key fixer
