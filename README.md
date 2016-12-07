@@ -43,6 +43,9 @@ It may be not such easy as it seems. Anyway, I have no idea how to do it.
 ### How can I change key combinations in Ae? ###
   There is no GUI for this. But you can change some combinations. This is official Adobe [sulution](https://helpx.adobe.com/after-effects/using/modify-keyboard-shortcuts.html): in main window menu choose Edit > Preferences > General then click Reveal Preferences in Explorer. You will see "Adobe After Effects 14.0 Win ru_RU Комбинации клавиш.txt" or similar file. Edit and save this file. Restart Ae.
 
+### How can I autostart alt-key-fixer at Windows boot ###
+  Create a shortcut for ctrl_to_zoom_Adobe.ahk file (using right mouse button menu) and move it to "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup" folder.
+
 ## Licence ##
 GNU General Public License v3
 
@@ -51,4 +54,4 @@ GNU General Public License v3
 - Fix symmetric remap for scrolling tracks up and down
 - Add beautiful icon to tray
 - Improve Open Source video editors, to be independent from adobe and windows.
-- Script for Ae to autoload alt key fixer
+- Script for Ae to autoload alt key fixer (checkout branch start_with_adobe for more info)
