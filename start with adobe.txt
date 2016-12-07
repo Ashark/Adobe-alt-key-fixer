@@ -1,0 +1,27 @@
+How to autostart adobe-alt-key-fixer when Ae or Pr is started?
+
+I was interested if it is possible to create a native ExtendScript script (it is JavaScript but for Adobe applications) to automatically start alt-key-fixer with Ae or Pr. I explored that a bit, but did not finish an implementation. So I want to share my explorations with you, bacause you may want to continue exploration and finish implementation.
+
+As for After Effects:
+The autostart script should be located at "C:\Program Files\Adobe\Adobe After Effects CC 2017\Support Files\Scripts" folder (Ae version varies). I have created a simple hello world alert, but I do not know how to execute external file. I tried several methods, but no one worked for me. Here is my code:
+
+{
+// I tried this methods, but nothing worked.
+//app.system("/path/to/external/executable &");
+
+//var exec = require('child_process').exec;  
+//exec('C:/Windows/notepad.exe');
+
+//var vbFile = new File("path/to/visualbasic_file.vb")
+//vbFile.execute();
+// See https://forums.adobe.com/thread/1402962 about what was inside vb file.
+
+alert ("Hello world at startup"); // Works!
+}
+
+To be able to debug your script, you need to install ESTK - Adobe Extend Script Toolkit. It can be downloaded for free in CC, but you need to register Adobe ID.
+
+As for Premiere Pro:
+There is no much information about scripting for Pr. But I have found this topic: https://forums.adobe.com/message/9047870#9047870. They say that in Pr the only way to exec some script is creating a panel. So you can create invisible panel with Javascript and call alt-key-fixer. But I did not dig how to implement it.
+
+I will keep this information in this branch. If you do not want alt-key-fixer to autostart with Windows, maybe you will help implement starting it with Adobe Pr or Ae. Personally I just set alt-key-fixer to autostart with Windows. I described it in master branch Readme.
