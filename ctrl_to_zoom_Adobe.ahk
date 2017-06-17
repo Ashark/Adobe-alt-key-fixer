@@ -3,6 +3,10 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+I_Icon = img\adobe-alt.ico
+IfExist, %I_Icon%
+  Menu, Tray, Icon, %I_Icon%
+
 ; Runs should be at the beginning of the script.
 Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-up.ahk"
 Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-down.ahk"

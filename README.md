@@ -52,6 +52,5 @@ GNU General Public License v3
 ## Todo ##
 - Make a single scipt file (if possible)
 - Fix symmetric remap for scrolling tracks up and down
-- Add beautiful icon to tray
 - Improve Open Source video editors, to be independent from adobe and windows.
 - Script for Ae to autoload alt key fixer (checkout branch start_with_adobe for more info)
