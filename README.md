@@ -1,5 +1,6 @@
 Adobe alt key fixer
 ===================
+![adobe alt icon](img/adobe-alt-64.png)
 
 This script changes alt key behavior for Adobe applications (mainly for Premiere Pro and After Effects) in Windows.
  - It allows you to use ctrl + mouse wheel for zooming in timeline.
