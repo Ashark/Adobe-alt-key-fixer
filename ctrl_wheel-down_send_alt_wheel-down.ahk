@@ -3,9 +3,6 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; Remove window menu popup when alt released
-~LAlt Up:: return
-
 ; When ctrl+wheelup or ctrl+wheeldown detected, we want to determine
 ; if window under mouse belongs to Adobe's application. All adobe's windows'
 ; Controls (including unattached panels from main window) are described as 

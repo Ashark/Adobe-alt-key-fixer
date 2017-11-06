@@ -29,7 +29,10 @@ It may be not such easy as it seems. Anyway, I have no idea how to do it.
 ## How to use ##
 - Download AutoHotKey application from [here](https://www.autohotkey.com/) and install it.
 - Clone this repository.
-- Double click on ctrl_to_zoom.ahk file. An icon will appear in system tray.
+- Select needed script:
+  - For use with Ae or Pr, double click on "\_Ae\_Pr.ahk" file. An icon will appear in system tray.
+  - For use with PrE, double click on "\_PrE.ahk" file. An icon will appear in system tray.
+
 - Enjoy comfortable behavior.
   * Script also works for unattached panels from main window.
   * In Windows 10 you can scale without even focusing Adobe window. Just be sure you have enabled "Scroll inactive windows when I hover over them" option under Settings > Devices > Mouse & Trackpad.
@@ -42,10 +45,11 @@ It may be not such easy as it seems. Anyway, I have no idea how to do it.
   However, you are still able to enter expression. Just select needed propetry, then use main window menu Animation > Add expression or press alt + shift + =.
 
 ### How can I change key combinations in Ae? ###
-  There is no GUI for this. But you can change some combinations. This is official Adobe [sulution](https://helpx.adobe.com/after-effects/using/modify-keyboard-shortcuts.html): in main window menu choose Edit > Preferences > General then click Reveal Preferences in Explorer. You will see "Adobe After Effects 14.0 Win ru_RU Комбинации клавиш.txt" or similar file. Edit and save this file. Restart Ae.
+  There is no GUI for this. But you can change some combinations. This is official Adobe [sulution](https://helpx.adobe.com/after-effects/using/modify-keyboard-shortcuts.html): in main window menu choose Edit > Preferences > General then click Reveal Preferences in Explorer. You will see "Adobe After Effects 14.0 Win ru_RU Комбинации клавиш.txt" or similar file. Edit and save this file. Restart Ae.<br>
+  In Ae 2018 they added interface for key combinations.
 
 ### How can I autostart alt-key-fixer at Windows boot ###
-  Create a shortcut for ctrl_to_zoom_Adobe.ahk file (using right mouse button menu) and move it to "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup" folder.
+  Create a shortcut for "\_Ae\_Pr.ahk" or "\_PrE.ahk" file (using right mouse button menu) and move it to "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup" folder.
 
 ## Licence ##
 GNU General Public License v3

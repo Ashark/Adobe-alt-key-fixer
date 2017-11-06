@@ -8,8 +8,8 @@ IfExist, %I_Icon%
   Menu, Tray, Icon, %I_Icon%
 
 ; Runs should be at the beginning of the script.
-Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-up.ahk"
-Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-down.ahk"
+Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-up_send_alt_wheel-up.ahk"
+Run, %A_AHKPath% "%A_ScriptDir%\ctrl_wheel-down_send_alt_wheel-down.ahk"
 
 ; Remove window menu popup when alt released
 ~LAlt Up:: return
