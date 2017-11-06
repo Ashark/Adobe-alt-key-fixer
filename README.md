@@ -2,8 +2,9 @@ Adobe alt key fixer
 ===================
 ![adobe alt icon](img/adobe-alt-64.png)
 
-This script changes alt key behavior for Adobe applications (mainly for Premiere Pro and After Effects) in Windows.
+This script changes alt key behavior for Adobe applications (mainly for Premiere Pro, Premiere Elements and After Effects) in Windows.
  - It allows you to use ctrl + mouse wheel for zooming in timeline.
+ - Allows to scroll timeline with mouse wheel in Premiere Elements in Expert mode.
  - It gets rid of alt key menu activation.
 
 ## The problem ##
